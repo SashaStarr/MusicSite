@@ -1,0 +1,32 @@
+main{
+    height: 100vh;
+    width: 100%;
+    background: #111111;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+}
+
+.buble{
+    background: none;
+    position: absolute;
+    top: 50px;
+    left: -157px;
+}
+
+.buble img {
+    width: 314px;
+}
+
+.rectage{
+    position: absolute;
+    right: 10%;
+    top: 50%;
+}
+
+.rectage img {
+    width: 300px;
+    mix-blend-mode: lighten;
+}

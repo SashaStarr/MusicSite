@@ -1,0 +1,30 @@
+button {
+    border:none;
+    background:none;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+.ring{
+    width: 250px;
+    position: absolute;
+    top :-9%;
+    right: 15%;
+    mix-blend-mode: lighten;
+}
+
+
+.stick{
+    width: 250px;
+    position: absolute;
+    top :27%;
+    right: -6%;
+    mix-blend-mode: lighten;
+}
+
+.app{
+    width: 100%;
+    overflow: hidden;
+    position :relative;
+}

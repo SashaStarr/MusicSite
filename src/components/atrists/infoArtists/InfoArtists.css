@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+.info-text{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: #FFFFFF;
+    font-size: 28px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+
+.all-info{
+    width: 27%;
+    margin: 10px;
+}
+
+.info-music{
+    padding: 10px;
+    color: #A2A2A2;
+    display:flex;
+    justify-content: flex-start;
+    align-items:center;
+    -webkit-border-radius: 20%;
+    -moz-border-radius: 20%;
+    -ms-border-radius: 20%;
+    -o-border-radius: 20%;
+}
+.info-music a{
+    color: #A2A2A2;
+}
+
+.social
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+}
+
+.social span a{
+    width: 20px;
+    color: #A2A2A2;
+}
+.social span a img{
+    width: 20px;
+    color: #A2A2A2;
+}
+.social span a svg{
+    padding-top: 7px;
+    width: 24px;
+    color: #A2A2A2;
+}
+
+.social span{
+    padding: 0 7px 0 7px;
+}
+
+.info-text-name{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}

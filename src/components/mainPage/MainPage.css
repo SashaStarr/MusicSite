@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+.header{
+    height: 105vh;
+    width: 100%;
+    background-image: url('../../resourses/img/backgroundImg.png');
+    background-size: cover;
+    line-height: 0.75;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header span img{
+    width: 100px;
+    height: 29.3px;
+    margin: 35px 35px;
+}
+
+.header-name{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    color: #111111;
+}
+
+.header-name span{
+    opacity: 14%;
+    font-size: 160px;
+    margin:5px;
+}
+
+.header-name span:nth-child(4){
+    opacity: 100%;
+}
+
+.header-under-name{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    color: rgb(1,1,1,0);
+    -webkit-text-stroke: 2px #111111;
+}
+
+.header-under-name span{
+    opacity: 25%;
+    font-size: 100px;
+    margin:5px;
+}
+
+.header-under-name span:nth-child(4){
+    -webkit-text-stroke: 2px #111111;
+    opacity: 100%;
+}
+
+.header-gradient{
+    width: 100%;
+    height: 82px;
+}
+
+.header-gradient{
+    background: linear-gradient(rgb(1,1,1,0), #111111);
+}
+
+.header-name-all{
+    margin-bottom: 60px;
+}
