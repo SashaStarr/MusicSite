@@ -1,73 +1,247 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 
-.header{
-    height: 105vh;
-    width: 100%;
-    background-image: url('../../resourses/img/backgroundImg.png');
-    background-size: cover;
-    line-height: 0.75;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.header {
+  height: 105vh;
+  width: 100%;
+  background: black;
+  line-height: 0.75;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.header span img{
-    width: 100px;
-    height: 29.3px;
-    margin: 35px 35px;
+.header span img {
+  width: 100px;
+  height: 29.3px;
+  margin: 35px 35px;
 }
 
-.header-name{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-    overflow: hidden;
-    color: #111111;
+.header-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+  color: #f5f5f5;
 }
 
-.header-name span{
-    opacity: 14%;
-    font-size: 160px;
-    margin:5px;
+.header-name span {
+  opacity: 14%;
+  font-size: 160px;
+  margin: 5px;
 }
 
-.header-name span:nth-child(4){
-    opacity: 100%;
+.header-name span:nth-child(4) {
+  opacity: 100%;
 }
 
-.header-under-name{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-    overflow: hidden;
-    color: rgb(1,1,1,0);
-    -webkit-text-stroke: 2px #111111;
+.header-under-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+  color: rgba(199, 199, 199, 0);
+  -webkit-text-stroke: 2px #f5f5f5;
 }
 
-.header-under-name span{
-    opacity: 25%;
-    font-size: 100px;
-    margin:5px;
+.header-under-name span {
+  opacity: 25%;
+  font-size: 100px;
+  margin: 5px;
 }
 
-.header-under-name span:nth-child(4){
-    -webkit-text-stroke: 2px #111111;
-    opacity: 100%;
+.header-under-name span:nth-child(4) {
+  -webkit-text-stroke: 2px #f5f5f5;
+  opacity: 100%;
 }
 
-.header-gradient{
-    width: 100%;
-    height: 82px;
+.header-gradient {
+  width: 100%;
+  height: 82px;
 }
 
-.header-gradient{
-    background: linear-gradient(rgb(1,1,1,0), #111111);
+.header-gradient {
+  background: linear-gradient(rgb(1, 1, 1, 0), #111111);
 }
 
-.header-name-all{
-    margin-bottom: 60px;
+.header-name-all {
+  margin-bottom: 60px;
 }
+
+.main-logo {
+  display: flex;
+  color: #f5f5f5;
+  padding: 50px 0 0 50px;
+  flex-direction: column;
+}
+
+.main-logo span span {
+  color: #b5f793;
+}
+
+.main-logo_title {
+  font-size: 37px;
+}
+
+.main-logo_undertext {
+  font-family: "Roboto", sans-serif;
+}
+
+.logo-animate {
+  display: flex;
+  align-items: center;
+  height: 45px;
+}
+
+.logo-animate_stick {
+  width: 6px;
+  margin: 0 5px;
+  height: 15px;
+  background: #f5f5f5;
+  border-radius: 25%;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+.logo-animate_stick:nth-child(1){
+    animation-name: stickes;
+}
+.logo-animate_stick:nth-child(2){
+    animation-name: stickes1;
+}
+.logo-animate_stick:nth-child(3){
+    animation-name: stickes2;
+}
+.logo-animate_stick:nth-child(4){
+    animation-name: stickes3;
+}
+.logo-animate_stick:nth-child(5){
+    animation-name: stickes4;
+}
+.logo-animate_stick:nth-child(6){
+    animation-name: stickes5;
+}
+.logo-animate_stick:nth-child(7){
+    animation-name: stickes6;
+}
+.logo-animate_stick:nth-child(8){
+    animation-name: stickes7;
+}
+
+@keyframes stickes {
+  0% {
+    height: 15px;
+    background: #f5f5f5;
+  }
+  8% {
+    height: 45px;
+    background: #b5f793;
+  }
+  16% {
+    height: 15px;
+    background: #f5f5f5;
+  }
+}
+
+@keyframes stickes1 {
+    8% {
+      height: 15px;
+      background: #f5f5f5;
+    }
+    16% {
+      height: 45px;
+      background: #b5f793;
+    }
+    24% {
+      height: 15px;
+      background: #f5f5f5;
+    }
+  }
+  @keyframes stickes2 {
+    16% {
+      height: 15px;
+      background: #f5f5f5;
+    }
+    24% {
+      height: 45px;
+      background: #b5f793;
+    }
+    32% {
+      height: 15px;
+      background: #f5f5f5;
+    }
+  }
+  @keyframes stickes3 {
+    24% {
+      height: 15px;
+      background: #f5f5f5;
+    }
+    32% {
+      height: 45px;
+      background: #b5f793;
+    }
+    40% {
+      height: 15px;
+      background: #f5f5f5;
+    }
+  }
+  @keyframes stickes4 {
+    32% {
+      height: 15px;
+      background: #f5f5f5;
+    }
+    40% {
+      height: 45px;
+      background: #b5f793;
+    }
+    48% {
+      height: 15px;
+      background: #f5f5f5;
+    }
+  }
+  @keyframes stickes5 {
+    40% {
+      height: 15px;
+      background: #f5f5f5;
+    }
+    48% {
+      height: 45px;
+      background: #b5f793;
+    }
+    54% {
+      height: 15px;
+      background: #f5f5f5;
+    }
+  }
+  @keyframes stickes6 {
+    48% {
+      height: 15px;
+      background: #f5f5f5;
+    }
+    56% {
+      height: 45px;
+      background: #b5f793;
+    }
+    62% {
+      height: 15px;
+      background: #f5f5f5;
+    }
+  }
+  @keyframes stickes7 {
+    56% {
+      height: 15px;
+      background: #f5f5f5;
+    }
+    62% {
+      height: 45px;
+      background: #b5f793;
+    }
+    70% {
+      height: 15px;
+      background: #f5f5f5;
+    }
+  }
+
