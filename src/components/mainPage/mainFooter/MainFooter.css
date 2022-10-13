@@ -47,3 +47,16 @@
     border: none;
 }
 
+
+@media screen and (max-width: 426px) {
+    .header-footer{
+      display: flex;
+      flex-direction: column;
+    }
+    .soc-icons{
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+    }
+  }

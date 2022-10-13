@@ -1,7 +1,7 @@
 import QrImg from '../../../resourses/img/QrImg.png';
 import './MainFooter.css';
-import Inst from '../../../resourses/img/inst.svg';
-import Vk from '../../../resourses/img/vk.svg';
+import Inst from '../../../resourses/img/instagram.png';
+import Vk from '../../../resourses/img/vkontakte.png';
 
 export default function MainFooter() {
 

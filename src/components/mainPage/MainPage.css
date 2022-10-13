@@ -1,73 +1,177 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 
-.header{
-    height: 105vh;
-    width: 100%;
-    background-image: url('../../resourses/img/backgroundImg.png');
-    background-size: cover;
-    line-height: 0.75;
+.header {
+  height: 105vh;
+  width: 100%;
+  background: black;
+  line-height: 0.75;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header span img {
+  width: 100px;
+  height: 29.3px;
+  margin: 35px 35px;
+}
+
+.header-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+  color: #f5f5f5;
+}
+
+.header-name span {
+  opacity: 14%;
+  font-size: 160px;
+  margin: 5px;
+}
+
+.header-name span:nth-child(4) {
+  opacity: 100%;
+}
+
+.header-under-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+  color: rgba(199, 199, 199, 0);
+  -webkit-text-stroke: 2px #f5f5f5;
+}
+
+.header-under-name span {
+  opacity: 25%;
+  font-size: 100px;
+  margin: 5px;
+}
+
+.header-under-name span:nth-child(4) {
+  -webkit-text-stroke: 2px #f5f5f5;
+  opacity: 100%;
+}
+
+.header-gradient {
+  width: 100%;
+  height: 82px;
+}
+
+.header-gradient {
+  background: linear-gradient(rgb(1, 1, 1, 0), #111111);
+}
+
+.header-name-all {
+  margin-bottom: 60px;
+}
+
+.main-logo {
+  display: flex;
+  color: #f5f5f5;
+  padding: 50px 0 0 50px;
+  flex-direction: column;
+}
+
+.main-logo span span {
+  color: #b5f793;
+}
+
+.main-logo_title {
+  font-size: 37px;
+}
+
+.main-logo_undertext {
+  font-family: "Roboto", sans-serif;
+}
+
+.logo-animate {
+  display: flex;
+  align-items: center;
+  height: 45px;
+  background-color: black;
+  padding-left: 23px;
+}
+
+.logo-animate_stick {
+  width: 6px;
+  margin: 0 5px;
+  height: 15px;
+  background: #f5f5f5;
+  border-radius: 20%;
+  animation-name: stick;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.main-logo_title {
+  padding: 10px 0;
+}
+
+.logo-animate{
+  
+}
+
+.logo-animate_stick:nth-child(3){
+  animation-delay: 0s;
+}
+
+.logo-animate_stick:nth-child(5){
+  animation-delay: 0.75s;
+}
+
+.logo-animate_stick:nth-child(8){
+  animation-delay: 1.15s;
+}
+.logo-animate_stick:nth-child(1){
+  animation-delay: 1.5s;
+}
+.logo-animate_stick:nth-child(7){
+  animation-delay: 1.9s;
+}
+.logo-animate_stick:nth-child(6){
+  animation-delay: 2.5s;
+}
+
+.logo-animate_stick:nth-child(2){
+  animation-delay: 2.8s;
+}
+
+.logo-animate_stick:nth-child(4){
+  animation-delay: 3.2s;
+}
+
+@keyframes stick {
+  0%{
+    background: #f5f5f5;
+    height: 15px;
+  }
+  50%{
+    background: #b5f793;
+    height: 45px;
+  }
+  100%{
+    background: #f5f5f5;
+    height: 15px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .main-logo {
     display: flex;
+    color: #f5f5f5;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    justify-content: space-between;
-}
-
-.header span img{
-    width: 100px;
-    height: 29.3px;
-    margin: 35px 35px;
-}
-
-.header-name{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-    overflow: hidden;
-    color: #111111;
-}
-
-.header-name span{
-    opacity: 14%;
-    font-size: 160px;
-    margin:5px;
-}
-
-.header-name span:nth-child(4){
-    opacity: 100%;
-}
-
-.header-under-name{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-    overflow: hidden;
-    color: rgb(1,1,1,0);
-    -webkit-text-stroke: 2px #111111;
-}
-
-.header-under-name span{
-    opacity: 25%;
-    font-size: 100px;
-    margin:5px;
-}
-
-.header-under-name span:nth-child(4){
-    -webkit-text-stroke: 2px #111111;
-    opacity: 100%;
-}
-
-.header-gradient{
-    width: 100%;
-    height: 82px;
-}
-
-.header-gradient{
-    background: linear-gradient(rgb(1,1,1,0), #111111);
-}
-
-.header-name-all{
-    margin-bottom: 60px;
+    padding: 50px 0 0 0;
+  } 
+  .logo-animate {
+    padding-left: 0;
+  }
 }
